@@ -3,6 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: "Gotham Pro";
+    src: url("../fonts/gt.ttf") format("truetype");
+    font-weight: bold;
+}
 $font:'Montserrat', sans-serif;
 $lblack : #111111;
 //эти стили нужно убрать
@@ -149,7 +154,7 @@ a:hover{
     margin-left: 0.5vw;
     color: #919191;
 }
-.menu__lang a.active{
+.menu__lang a.this{
     color: $lblack;
 }
 
@@ -161,6 +166,10 @@ a:hover{
 }
 .s-menu a {
     font-size: 1vw;
+    transition: 0.3s all;
+}
+.s-menu a:hover{
+    font-weight: 600;
 }
 .s-menu li{
     margin-bottom: 1.2vw;
@@ -185,9 +194,74 @@ a:hover{
 }
 
 //s2
+.s-menu2{
+    position: absolute;
+    right: 0;
+    width: 16vw;
+    top: 8.6vw;
+}
+.menu-s2__top{
+    display: flex;
+    align-items: center;
+    font-family: 'Gotham Pro';
+    font-weight: bold;
+    font-size: 1.5vw;
+    margin-bottom: 2.4vw;
+}
+.menu-s2__top img{
+    margin-right: 1.1vw;
+}
+.s-list a{    
+    font-size: 0.9vw;
+    transition: 0.3s all;
+    position: relative;
+    margin-bottom: 0.4vw;
+    display: block;
+    white-space: nowrap;
+}
+.s-list a:hover{
+    font-weight: 600;
+}
+.s-list a.active{
+    font-size: 1.05vw;
+    font-weight: 600;
+    color: #5C3814;
+    padding-left: 0.5vw;
+    margin-bottom: 0.8vw;
+}
+.s-list a.active:before{
+    content: "";
+    width: 0.8vw;
+    height: 2px;
+    position: absolute;
+    left: -1vw;
+    top: calc(50% - 2px);
+    display: block;
+    background-color: #5C3814;
+}
 .s2 .title div{
-    font-size: 20vw;
+    font-size: 19vw;
+    margin-bottom: -1vw;
 }
 .s2 .title {
-    padding-top: 17vw;
+    padding-top: 16vw;
+}
+.s-menu__bot a{
+    font-size: 0.9vw;
+    transition: 0.3s all;
+    position: relative;
+    margin-bottom: 0.4vw;
+    display: block;
+    white-space: nowrap;
+}
+.s-menu__bot a:hover{
+    font-weight: 600;
+}
+.s-menu__bot a:before{
+    content: "";
+    width: 0.5vw;
+    height: 0.5vw;
+    display: inline-block;
+    margin-right: 0.5vw;
+    background: linear-gradient(#3e3e3e, #0D0D0D)
 }
