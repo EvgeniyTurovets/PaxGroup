@@ -8,6 +8,18 @@
     src: url("../fonts/gt.ttf") format("truetype");
     font-weight: bold;
 }
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url("../fonts/BebasNeue Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Bebas Neue";
+    src: url("../fonts/BebasNeue Bold.ttf") format("truetype");
+    font-weight: bold;
+}
+
 $font:'Montserrat', sans-serif;
 $lblack : #111111;
 //эти стили нужно убрать
@@ -68,16 +80,17 @@ a:hover{
     padding-left: 15.63vw;
 }
 .title{
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue';
     padding-left: 9vw;
     overflow: hidden;
     user-select: none;
 }
 .s1 .title{
-    padding-top: 8vw;
+    padding-top: 7vw;
 }
 .title div{
     background-clip: text;
+    font-weight: bold;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-image: url('../img/gif.gif');
@@ -94,6 +107,9 @@ a:hover{
 }
 .s1 .title div:nth-child(2){
     letter-spacing: -0.01em;
+}
+.s1 .title span{
+    margin-top: 0.5vw;
 }
 .title span{
     margin-left: 1%;
@@ -212,7 +228,7 @@ a:hover{
     margin-right: 1.1vw;
 }
 .s-list a{    
-    font-size: 0.9vw;
+    font-size: 0.8vw;
     transition: 0.3s all;
     position: relative;
     margin-bottom: 0.4vw;
@@ -247,7 +263,7 @@ a:hover{
     padding-top: 16vw;
 }
 .s-menu__bot a{
-    font-size: 0.9vw;
+    font-size: 0.8vw;
     transition: 0.3s all;
     position: relative;
     margin-bottom: 0.4vw;
@@ -264,4 +280,321 @@ a:hover{
     display: inline-block;
     margin-right: 0.5vw;
     background: linear-gradient(#3e3e3e, #0D0D0D)
+}
+
+
+//s3
+.s3 .title div {
+    font-size: 19vw;
+    line-height: 0.85;
+}
+.s3 .title {
+    padding-top: 8.8vw;
+}
+.s3  .title span{
+    margin-top: 1vw;
+}
+//s4
+.s4 .title div {
+    font-size: 19vw;
+    line-height: 0.85;
+}
+.s4 .title .tm{
+    font-size: 7vw;
+    font-family: $font;
+    letter-spacing: 0;
+    max-width: 50%;
+    line-height: 1;
+    font-weight: bold;
+    text-transform: none;
+    letter-spacing: -0.1rem;
+    margin-bottom: 2.5vw;
+}
+.s4 .title {
+    padding-top: 8vw;
+}
+
+//s5
+.s5 .title div {
+    font-size: 19vw;
+    line-height: 0.85;
+}
+.s5 .title .tm{
+    font-size: 7vw;
+    font-family: $font;
+    letter-spacing: 0;
+    line-height: 1;
+    font-weight: bold;
+    text-transform: none;
+    letter-spacing: -0.3rem;
+    margin-bottom: 2.5vw;
+}
+.s5 .title {
+    padding-top: 8vw;
+}
+
+//s6
+.s6 .title div {
+    font-size: 17vw;
+    line-height: 0.85;
+}
+.s6 .title div span{
+    font-family: $font;
+    font-size: 17vw;
+    max-width: 100%;
+    line-height: 0.85;
+    display: inline;
+    font-weight: 600;
+    letter-spacing: -0.5rem;
+}
+.s6 .title .tm{
+    font-size: 7vw;
+    font-family: $font;
+    letter-spacing: 0;
+    max-width: 50%;
+    line-height: 1;
+    font-weight: bold;
+    text-transform: none;
+    letter-spacing: -0.1rem;
+    margin-bottom: 2.5vw;
+}
+.s6 .title {
+    padding-top: 7.5vw;
+}
+
+
+//s7
+.s7 .title div {
+    font-size: 19vw;
+    line-height: 0.85;
+}
+.s7 .title .tm{
+    font-size: 7vw;
+    font-family: $font;
+    letter-spacing: 0;
+    max-width: 50%;
+    line-height: 1;
+    font-weight: bold;
+    text-transform: none;
+    letter-spacing: -0.3rem;
+    margin-bottom: 2.5vw;
+}
+.s7 .title {
+    padding-top: 8vw;
+}
+
+//s8
+.s8 .title div {
+    font-size: 19vw;
+    line-height: 0.85;
+}
+.s8 .title .tm{
+    font-size: 7vw;
+    font-family: $font;
+    letter-spacing: 0;
+    max-width: 50%;
+    line-height: 1;
+    font-weight: bold;
+    text-transform: none;
+    letter-spacing: -0.3rem;
+    margin-bottom: 1.5vw;
+}
+.s8 .title {
+    padding-top: 8vw;
+}
+
+//s9
+.s9 .title div {
+    font-size: 19vw;
+    line-height: 0.85;
+    margin-bottom: 0.5vw;
+}
+.s9 .title .tm{
+    font-size: 5.5vw;
+    font-family: $font;
+    letter-spacing: 0;
+    line-height: 1;
+    font-weight: bold;
+    text-transform: none;
+    letter-spacing: -0.3rem;
+    margin-bottom: 4vw;
+}
+.s9 .title {
+    padding-top: 8vw;
+}
+
+//s10
+.s10 .title div {
+    font-size: 19vw;
+    line-height: 0.85;
+    margin-bottom: 0.5vw;
+}
+.s10 .title .tm{
+    font-size: 5.5vw;
+    font-family: $font;
+    letter-spacing: 0;
+    line-height: 1;
+    font-weight: bold;
+    text-transform: none;
+    letter-spacing: -0.3rem;
+    margin-bottom: 2vw;
+}
+.s10 .title {
+    padding-top: 8vw;
+}
+
+//s11
+.s11 .title div {
+    font-size: 19vw;
+    line-height: 0.85;
+    margin-bottom: 1.5vw;
+}
+.s11 .title .tm{
+    font-size: 5.5vw;
+    font-family: $font;
+    letter-spacing: 0;
+    line-height: 1;
+    font-weight: bold;
+    text-transform: none;
+    letter-spacing: -0.3rem;
+    margin-bottom: 2vw;
+}
+.s11 .title {
+    padding-top: 8vw;
+}
+
+//s12
+.s12 .title div {
+    font-size: 19vw;
+    line-height: 0.85;
+    margin-bottom: 1.5vw;
+}
+.s12 .title .tm{
+    font-size: 5.5vw;
+    font-family: $font;
+    letter-spacing: 0;
+    line-height: 1;
+    font-weight: bold;
+    text-transform: none;
+    letter-spacing: -0.3rem;
+    margin-bottom: 2vw;
+}
+.s12 .title {
+    padding-top: 8vw;
+}
+
+//s13
+.s13 .title div {
+    font-size: 19vw;
+    line-height: 0.85;
+    margin-bottom: 1.5vw;
+}    
+.s13 .title .tm{
+    font-size: 5.5vw;
+    font-family: $font;
+    letter-spacing: 0;
+    line-height: 1;
+    font-weight: bold;
+    text-transform: none;
+    letter-spacing: -0.3rem;
+    margin-bottom: 2vw;
+}
+.s13 .title {
+    padding-top: 8vw;
+}
+
+//s14
+.s14 .title div {
+    font-size: 13vw;
+    line-height: 0.85;
+    margin-bottom: 1.5vw;
+
+}
+.s14 .title .tm{
+    font-size: 5.5vw;
+    font-family: $font;
+    letter-spacing: 0;
+    line-height: 1;
+    font-weight: bold;
+    text-transform: none;
+    letter-spacing: -0.3rem;
+    margin-bottom: 2vw;
+}
+.s14 .title {
+    padding-top: 8vw;
+}
+.s14 .title span{
+    margin-top: 3vw;
+}
+
+//s15
+.s15 .title div {
+    font-size: 13vw;
+    line-height: 0.85;
+    margin-bottom: 2.3vw;
+
+}
+.s15 .title div:nth-child(2){
+    font-size: 9vw;
+}
+
+.s15 .title div span{
+    font-family: $font;
+    font-size: 13vw;
+    display: inline;
+    font-weight: 600;
+    margin-top: 0;
+    line-height: 0.85;
+}
+.s15 .title div:nth-child(2) span{
+    font-size: 7.5vw;
+}
+.s15 .title .tm{
+    font-size: 5.5vw;
+    font-family: $font;
+    letter-spacing: 0;
+    line-height: 1;
+    font-weight: bold;
+    text-transform: none;
+    letter-spacing: -0.3rem;
+    margin-bottom: 2vw;
+}
+.s15 .title {
+    padding-top: 8vw;
+}
+.s15 .title span{
+    margin-top: 5vw;
+}
+
+//s16
+.s16 .title div {
+    font-size: 18vw;
+    line-height: 0.85;
+    margin-bottom: 1.5vw;
+
+}
+.s16 .title div span{
+    font-family: $font;
+    font-size: 18vw;
+    display: inline;
+    font-weight: 600;
+    margin-top: 0;
+    line-height: 0.85;
+    letter-spacing: 2rem;
+}
+.s16 .title .tm{
+    font-size: 5.5vw;
+    font-family: $font;
+    letter-spacing: 0;
+    line-height: 1;
+    font-weight: bold;
+    text-transform: none;
+    letter-spacing: -0.3rem;
+    margin-bottom: 2vw;
+}
+.s16 .title {
+    padding-top: 8vw;
+}
+.s16 .title span{
+    margin-top: 0vw;
 }
