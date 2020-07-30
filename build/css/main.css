@@ -822,3 +822,12 @@ a:hover {
     padding: 15% 0; }
   .section:first-child {
     padding-top: 100px; } }
+
+@media (max-width: 500px) {
+  html, body {
+    overflow: hidden;
+    height: 100%; }
+  #main {
+    position: relative;
+    overflow: auto;
+    height: 100%; } }
