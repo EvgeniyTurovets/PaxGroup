@@ -43,7 +43,8 @@ $(function () {
 	});
 
 	$('.burger').click(function(){
-		
+		$('#menu').toggleClass('open')
+		$('html').toggleClass('hidden')
 	})
 })
 $(document).ready(function () {

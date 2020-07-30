@@ -30,6 +30,10 @@ body{
     font-weight: normal;
     font-size: 1vw;
 }
+html.hidden{
+    overflow: hidden;
+    height: 100%;
+}
 ul {
     padding: 0;
     margin: 0;
@@ -748,6 +752,7 @@ a:hover{
         height: 50px;
         padding: 10px;
         background-color: transparent;
+        overflow: hidden;
     }
     .menu-list{
         display: none;
@@ -793,21 +798,7 @@ a:hover{
     //     z-index: 0;
     //     transition: all .7s ease-in-out;
     // }
-    .title a{
-        margin-top: 45px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 183px;
-        height: 45px;
-        font-size: 14px;
-        color: #fff;
-        font-family: $font;
-        background: linear-gradient(180deg, rgba(157, 114, 71, 0.76) 0%, #5C3814 100%); 
-    }
-    .title a svg{
-        margin-left: 10px;
-    }
+    
     .s-menu{
         width: 30vw;
     }
@@ -933,18 +924,95 @@ a:hover{
     .s10 .title .tm{
         letter-spacing: 0;
     }
+    #menu.open .burger span{
+        background-color: #000;
+    }
+    #menu.open{
+        transition: 0.7s;
+        height: 100%;
+        background-color: #fff;
+    }
+    #menu.open .burger span:nth-child(1){
+        transform: rotate(-45deg);
+        top: 40%;
+    }
+    #menu.open .burger span:nth-child(3){
+        transform: rotate(45deg);
+        bottom: 47%;
+        width: 25px;
+    }
+    
+    #menu.open .burger span:nth-child(2){
+        opacity: 0;
+        width: 25px;
+        transform: translateX(-50%)
+    }
+    .mob-sroll{
+        height: calc(100% - 50px);
+        overflow: auto;
+    }
+    .menu-list{
+        margin-top: 20px;
+        display: block;
+        position: relative;
+        text-align: left;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .menu-list ul li{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .menu-list ul{
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .menu__bot{
+        margin-top: 30px;
+        display: block;
+        position: relative;
+        right: 0;
+        bottom: 0;
+        text-align: left;
+    }
+    .menu__lang{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .menu__soc a{
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
 }
 
 @media(max-width: 767px){
+    
+}
+
+@media(max-width: 559px){
+    .title a{
+        margin-top: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 183px;
+        height: 45px;
+        font-size: 14px;
+        color: #fff;
+        font-family: $font;
+        background: linear-gradient(180deg, rgba(157, 114, 71, 0.9) 0%, #5C3814 100%); 
+    }
+    .title a svg{
+        margin-left: 10px;
+    }
     .title a{
         margin-top: 25px;
     }
     .logo{
         width: 129px;
     }
-}
-
-@media(max-width: 559px){
     .s-menu2{
         display: none;
     }
@@ -960,5 +1028,118 @@ a:hover{
 }
 
 @media(max-width: 500px){
-    
+    .s1 .title div{
+        font-size: 45vw;
+        margin-bottom: 0;
+    }
+    .title span{
+        font-size: 5.2vw;
+        max-width: 90%;
+        line-height: 1.3;
+        padding-top: 30px;
+    }
+    .s1 .title a{
+        margin-top: 35px;
+    }
+    .title a{
+        margin-top: 30px;
+    }
+    .section{
+        padding: 100px 0;
+    }
+
+    .s2 .title div{
+        font-size: 37vw;
+        margin-bottom: -25px;
+    }
+    .s3 .title div{
+        font-size: 33vw;
+    }
+    .s4 .title div{
+        font-size: 33vw;
+    }
+    .s4 .title .tm{
+        font-size: 13vw;
+        margin-bottom: 0;
+    }
+    .s5 .title div{
+        font-size: 33vw;
+        margin-bottom: 2vw;
+    }
+    .s5 .title .tm{
+        font-size: 10vw;
+    }
+    .s6 .title div{
+        font-size: 26vw;
+        margin-bottom: 2vw;
+    }
+    .s6 .title div span{
+        letter-spacing: -0.01rem;
+        font-size: 26vw;
+        margin-left: 0;
+    }
+    .s6 .title .tm{
+        font-size: 13vw;
+    }
+
+    .s7 .title div{
+        font-size: 33vw;
+    }
+    .s8 .title div{
+        font-size: 33vw;
+    }
+    .s8 .title .tm{
+        font-size: 13vw;
+        max-width: 100%;
+        letter-spacing: -0.1rem;
+    }
+    .s9 .title div{
+        font-size: 33vw;
+        margin-bottom: 2vw;
+    }
+    .s9 .title .tm{
+        margin-bottom: 0;
+    }
+    .s9 .title .tm{
+        font-size: 7.5vw;
+    }
+    .s10 .title div{
+        font-size: 45vw;
+        margin-bottom: 2vw;
+    }
+    .s10 .title .tm{
+        font-size: 8.5vw;
+    }
+
+    .s11 .title div{
+        font-size: 33vw;
+    }
+    .s12 .title div{
+        font-size: 33vw;
+    }
+    .s13 .title div{
+        font-size: 33vw;
+    }
+    .s14 .title div{
+        font-size: 22vw;
+    }
+    .s15 .title div span{
+        font-size: 33vw;
+    }
+    .s15 .title div{
+        font-size: 33vw;
+    }
+    .s15 .title div:nth-child(2){
+        font-size: 20vw;
+    }
+    .s15 .title div:nth-child(2) span{
+        font-size: 10.5vw;
+    }
+    .s16 .title div span{
+        font-size: 33vw;
+        letter-spacing: 2vw;
+    }
+    .s16 .title div{
+        font-size: 33vw;
+    }
 }
