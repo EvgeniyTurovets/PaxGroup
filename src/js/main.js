@@ -1,16 +1,8 @@
 $(function () {
+
 	let myFullpage = new fullpage('#full',{
-		responsiveWidth: 992
+		responsiveWidth: 992,
 	});
-
-	$('.arr-d').click(function () {
-		myFullpage.moveSectionDown();
-		myFullpage.fitToSection();
-
-	})
-	$('.arr-up').click(function () {
-		myFullpage.moveSectionUp();
-	})
 
 	function destroyFullpage(){
 		if($(window).width() < 992){
@@ -24,6 +16,15 @@ $(function () {
 	})
 	destroyFullpage()
 
+	$('.arr-d').click(function () {
+		myFullpage.moveSectionDown();
+		myFullpage.fitToSection();
+
+	})
+	$('.arr-up').click(function () {
+		myFullpage.moveSectionUp();
+	})
+	
 	$(window).scroll(function() {
 
 		var target = $(this).scrollTop();
@@ -46,7 +47,11 @@ $(function () {
 		$('#menu').toggleClass('open')
 		$('html').toggleClass('hidden')
 	})
+
+	$('.slider-wrap').slick();
+
 })
+
 $(document).ready(function () {
 	$('.preload').fadeOut();
 })

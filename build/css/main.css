@@ -878,6 +878,10 @@ a:hover {
 
 @media (max-width: 500px) {
   .section .title div {
+    margin-bottom: -3vw; }
+  .s1 .title div:nth-child(1) {
+    margin-bottom: -4vw; }
+  .section .title div {
     line-height: 1; }
   .s1 .title div {
     font-size: 45vw;
