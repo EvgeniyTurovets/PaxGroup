@@ -7,7 +7,6 @@ $(function () {
 	function destroyFullpage(){
 		if($(window).width() < 992){
 			myFullpage.destroy('all');
-			console.log('1')
 		}
 	}
 	
@@ -25,23 +24,23 @@ $(function () {
 		myFullpage.moveSectionUp();
 	})
 	
-	$(window).scroll(function() {
+	// $(window).scroll(function() {
 
-		var target = $(this).scrollTop();
+	// 	var target = $(this).scrollTop();
 
-		if($(window).width() < 992){
-			if(target == 0) {
+	// 	if($(window).width() < 992){
+	// 		if(target == 0) {
 
-				$('#menu').removeClass('white')
+	// 			$('#menu').removeClass('white')
 	
-			} else {
+	// 		} else {
 	
-				$('#menu').addClass('white')
+	// 			$('#menu').addClass('white')
 	
-			}
-		}
+	// 		}
+	// 	}
 	
-	});
+	// });
 
 	$('.burger').click(function(){
 		$('#menu').toggleClass('open')
@@ -55,6 +54,3 @@ $(function () {
 $(document).ready(function () {
 	$('.preload').fadeOut();
 })
-
-
-
