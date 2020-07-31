@@ -25,7 +25,7 @@ $(function () {
 		myFullpage.moveSectionUp();
 	})
 	
-	$(window).scroll(function() {
+	$('#main').scroll(function() {
 
 		var target = $(this).scrollTop();
 
