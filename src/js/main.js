@@ -1,19 +1,19 @@
 $(function () {
 
-	// let myFullpage = new fullpage('#full',{
-	// 	responsiveWidth: 992,
-	// });
+	let myFullpage = new fullpage('#full',{
+		responsiveWidth: 992,
+	});
 
-	// function destroyFullpage(){
-	// 	if($(window).width() < 992){
-	// 		myFullpage.destroy('all');
-	// 	}
-	// }
+	function destroyFullpage(){
+		if($(window).width() < 992){
+			myFullpage.destroy('all');
+		}
+	}
 	
-	// $(window).resize(function(){
-	// 	destroyFullpage()
-	// })
-	// destroyFullpage()
+	$(window).resize(function(){
+		destroyFullpage()
+	})
+	destroyFullpage()
 
 	$('.arr-d').click(function () {
 		myFullpage.moveSectionDown();
