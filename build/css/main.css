@@ -852,7 +852,15 @@ a:hover {
     margin-top: 20px; }
   .menu__soc a {
     margin-left: 0;
-    margin-right: 10px; } }
+    margin-right: 10px; }
+  html, body {
+    overflow: hidden;
+    height: 100%; }
+  #menu {
+    position: absolute; }
+  #main {
+    height: 100%;
+    overflow: auto; } }
 
 @media (max-width: 559px) {
   .title a {
@@ -885,14 +893,6 @@ a:hover {
     padding-top: 100px; } }
 
 @media (max-width: 500px) {
-  html, body {
-    overflow: hidden;
-    height: 100%; }
-  #menu {
-    position: absolute; }
-  #main {
-    height: 100%;
-    overflow: auto; }
   .section .title div {
     margin-bottom: -3vw; }
   .s1 .title div:nth-child(1) {

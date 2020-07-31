@@ -994,7 +994,17 @@ a:hover{
         margin-left: 0;
         margin-right: 10px;
     }
-
+    html,body{
+        overflow: hidden;
+        height: 100%;
+    }
+    #menu{
+        position: absolute;
+    }
+    #main{
+        height: 100%;
+        overflow: auto;
+    }
 }
 
 @media(max-width: 767px){
@@ -1038,17 +1048,7 @@ a:hover{
 }
 
 @media(max-width: 500px){
-    html,body{
-        overflow: hidden;
-        height: 100%;
-    }
-    #menu{
-        position: absolute;
-    }
-    #main{
-        height: 100%;
-        overflow: auto;
-    }
+  
     .section .title div{
         margin-bottom: -3vw;
     }

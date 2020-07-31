@@ -48,8 +48,13 @@ $(function () {
 		$('html').toggleClass('hidden')
 	})
 
-	// $('.slider-wrap').slick();
-
+	if($('.slider').length){
+		$('.slider-wrap').slick();
+	}
+	
+	if($('.s1').lenth){
+		
+	}
 })
 
 $(document).ready(function () {
