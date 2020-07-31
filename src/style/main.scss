@@ -1032,6 +1032,10 @@ a:hover{
 }
 
 @media(max-width: 500px){
+    .title div{
+        -webkit-text-fill-color:#000057;
+        background-image: none;
+    }
     .section .title div{
         margin-bottom: -3vw;
     }
