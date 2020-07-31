@@ -3,6 +3,12 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+@font-face {
+    font-family: Biko;
+    src:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/biko-black.woff");
+  }
+
 @font-face {
     font-family: "Gotham Pro";
     src: url("../fonts/gt.ttf") format("truetype");
@@ -1032,9 +1038,16 @@ a:hover{
 }
 
 @media(max-width: 500px){
-    .title div{
-        -webkit-text-fill-color:#000057;
-        background-image: none;
+    html,body{
+        overflow: hidden;
+        height: 100%;
+    }
+    #menu{
+        position: absolute;
+    }
+    #main{
+        height: 100%;
+        overflow: auto;
     }
     .section .title div{
         margin-bottom: -3vw;
