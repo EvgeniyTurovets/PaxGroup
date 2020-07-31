@@ -679,7 +679,8 @@ a:hover {
     height: 50px;
     padding: 10px;
     background-color: transparent;
-    overflow: hidden; }
+    overflow: hidden;
+    bottom: auto; }
   .menu-list {
     display: none; }
   .menu__bot {
