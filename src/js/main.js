@@ -2,6 +2,7 @@ $(function () {
 
 	let myFullpage = new fullpage('#full',{
 		responsiveWidth: 992,
+		scrollingSpeed: 1200,
 	});
 
 	function destroyFullpage(){
