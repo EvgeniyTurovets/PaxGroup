@@ -49,12 +49,26 @@ $(function () {
 	})
 
 	if($('.slider').length){
-		$('.slider-wrap').slick();
+		$('.slider-wrap').slick({
+			arrows: false,
+			dots: true,
+			fade: true
+		});
 	}
 	
-	if($('.s1').lenth){
-		
-	}
+	
+	$('ul.tabs__caption').on('click', 'li:not(.active)', function() {
+	    $(this)
+	    .addClass('active').siblings().removeClass('active')
+	    .closest('div.tabs').find('div.tabs__content').hide().eq($(this).index()).fadeIn();
+	});
+
+	$('.change-tabs').on('click', 'li:not(.active)', function() {
+	    $(this)
+	    .addClass('active').siblings().removeClass('active')
+	    .closest('.double-tabs').find('div.tabs').hide().eq($(this).index()).fadeIn();
+	});
+	
 })
 
 $(document).ready(function () {

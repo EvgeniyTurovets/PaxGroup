@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box; }
 
+button:focus {
+  outline: none; }
+
 @font-face {
   font-family: Biko;
   src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/biko-black.woff"); }
@@ -24,7 +27,7 @@
 
 body {
   background-color: #fff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1;
   font-weight: normal;
   font-size: 1vw; }
@@ -103,7 +106,7 @@ a:hover {
   padding-left: 15.63vw; }
 
 .title {
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   padding-left: 9vw;
   overflow: hidden;
   -webkit-user-select: none;
@@ -149,7 +152,7 @@ a:hover {
   display: block;
   font-size: 1.25vw;
   line-height: 138.9%;
-  color: #0D0D0D;
+  color: #0d0d0d;
   font-family: "Montserrat", sans-serif; }
 
 .logo img {
@@ -192,7 +195,7 @@ a:hover {
 
 .menu__lang {
   font-size: 1vw;
-  font-family: 'Bebas Neue', cursive; }
+  font-family: "Bebas Neue", cursive; }
 
 .menu__lang a {
   margin-left: 0.5vw;
@@ -249,7 +252,7 @@ a:hover {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
-  font-family: 'Gotham Pro';
+  font-family: "Gotham Pro";
   font-weight: bold;
   font-size: 1.5vw;
   margin-bottom: 2.4vw; }
@@ -271,7 +274,7 @@ a:hover {
 .s-list a.active {
   font-size: 1.05vw;
   font-weight: 600;
-  color: #5C3814;
+  color: #5c3814;
   padding-left: 0.5vw;
   margin-bottom: 0.8vw; }
 
@@ -283,7 +286,7 @@ a:hover {
   left: -1vw;
   top: calc(50% - 2px);
   display: block;
-  background-color: #5C3814; }
+  background-color: #5c3814; }
 
 .s2 .title div {
   font-size: 19vw;
@@ -309,7 +312,7 @@ a:hover {
   height: 0.5vw;
   display: inline-block;
   margin-right: 0.5vw;
-  background: linear-gradient(#3e3e3e, #0D0D0D); }
+  background: linear-gradient(#3e3e3e, #0d0d0d); }
 
 .s3 .title div {
   font-size: 19vw;
@@ -853,7 +856,8 @@ a:hover {
   .menu__soc a {
     margin-left: 0;
     margin-right: 10px; }
-  html, body {
+  html,
+  body {
     overflow: hidden;
     height: 100%; }
   #menu {
@@ -876,7 +880,7 @@ a:hover {
     font-size: 14px;
     color: #fff;
     font-family: "Montserrat", sans-serif;
-    background: linear-gradient(180deg, rgba(157, 114, 71, 0.9) 0%, #5C3814 100%); }
+    background: linear-gradient(180deg, rgba(157, 114, 71, 0.9) 0%, #5c3814 100%); }
   .title a svg {
     margin-left: 10px; }
   .title a {
