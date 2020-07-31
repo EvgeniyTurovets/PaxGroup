@@ -25,6 +25,9 @@ body {
   font-weight: normal;
   font-size: 1vw; }
 
+.app {
+  position: relative; }
+
 html.hidden {
   overflow: hidden;
   height: 100%; }
