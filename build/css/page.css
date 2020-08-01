@@ -314,6 +314,9 @@ button:hover {
   .s-wrap {
     padding-right: 21.63vw; } }
 
+.mob-select {
+  display: none; }
+
 @media (max-width: 991px) {
   #menu {
     background-image: none; }
