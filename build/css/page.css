@@ -317,7 +317,38 @@ button:hover {
 .mob-select {
   display: none; }
 
+.mob-menu-page {
+  display: none; }
+
 @media (max-width: 991px) {
+  .mob-menu-page {
+    display: block; }
+  .mob-menu-page .s-menu2 {
+    display: block;
+    margin-top: 30px; }
+  .menu-list {
+    display: none; }
+  .s-list li {
+    width: 100%;
+    text-align: left; }
+  .s-menu__bot li {
+    width: 100%;
+    text-align: left; }
+  .s-menu__bot a {
+    font-size: 14px;
+    margin-bottom: 15px; }
+  .s-menu__bot a:before {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px; }
+  .s-list li a {
+    font-size: 14px;
+    margin-bottom: 15px; }
+  .s-list li a.active {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: inherit;
+    font-weight: 400; }
   #menu {
     background-image: none; }
   .s-menu {
@@ -378,6 +409,8 @@ button:hover {
     border: 0;
     font-family: inherit;
     font-weight: 500; }
+  select:focus {
+    outline: none; }
   .mob-select div {
     width: -webkit-max-content;
     width: max-content;
@@ -386,6 +419,11 @@ button:hover {
     -ms-flex-align: center;
         align-items: center;
     margin-right: 20px; }
+  .mob-select .mob-select2 {
+    display: none; }
+  .mob-select .mob-select2.active {
+    display: -ms-flexbox;
+    display: flex; }
   .mob-select div:after {
     content: "";
     display: block;

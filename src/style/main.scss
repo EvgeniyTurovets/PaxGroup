@@ -70,6 +70,15 @@ a:hover {
   z-index: 2;
   cursor: pointer;
 }
+#arrow.first .arr-up{
+  opacity: 0;
+}
+#arrow.last .arr-d{
+  opacity: 0;
+}
+#arrow path{
+  fill: black;
+}
 #arrow div {
   transition: 0.3s all;
 }
@@ -1000,6 +1009,10 @@ a:hover {
   #main {
     height: 100%;
     overflow: auto;
+  }
+  .menu__lang a{
+    margin-left: 0;
+    margin-right: 10px;
   }
 }
 
