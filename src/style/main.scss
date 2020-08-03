@@ -137,12 +137,17 @@ a:hover {
   /*-webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-image: url("../img/gif.gif");*/
+  opacity: 0.8; /* Значение прозрачности */
+  filter: alpha(Opacity=80); /* Прозрачность в IE */
   mix-blend-mode: multiply;
-  color: #000;
-  opacity: 0.6; /* Значение прозрачности */
-  filter: alpha(Opacity=60);
-  text-shadow: 0 0 8px rgba(0,0,0,5), 0 2px 4px rgba(0,0,0,0.9);
+  color: #054D91;
+  text-shadow: 0 0 4px black, 0 0px 0px rgba(0, 0, 0, 0.5);
 
+}
+.title div span{
+  mix-blend-mode: multiply;
+  color: #054D91;
+  text-shadow: 0 0 4px black, 0 0px 0px rgba(0, 0, 0, 0.5);
 }
 .s1 .title div {
   font-size: 24vw;
