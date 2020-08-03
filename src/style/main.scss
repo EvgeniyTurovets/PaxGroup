@@ -134,10 +134,15 @@ a:hover {
 .title div {
   background-clip: text;
   font-weight: bold;
-  -webkit-text-fill-color: transparent;
+  /*-webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-image: url("../img/gif.gif");
-  background-size: 100%;
+  background-image: url("../img/gif.gif");*/
+  mix-blend-mode: multiply;
+  color: #fff;
+  opacity: 0.7; /* Значение прозрачности */
+  filter: alpha(Opacity=70);
+  text-shadow: 0 0 8px rgba(0,0,0,5), 0 2px 4px rgba(0,0,0,0.9);
+
 }
 .s1 .title div {
   font-size: 24vw;
