@@ -138,10 +138,10 @@ a:hover {
   -webkit-background-clip: text;
   background-image: url("../img/gif.gif");*/
   mix-blend-mode: multiply;
-  color: #fff;
-  opacity: 0.7;
+  color: #000;
+  opacity: 0.6;
   /* Значение прозрачности */
-  filter: alpha(Opacity=70);
+  filter: alpha(Opacity=60);
   text-shadow: 0 0 8px black, 0 2px 4px rgba(0, 0, 0, 0.9); }
 
 .s1 .title div {
