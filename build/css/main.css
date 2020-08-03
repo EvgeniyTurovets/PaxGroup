@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -131,24 +130,11 @@ a:hover {
   padding-top: 7vw; }
 
 .title div {
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   font-weight: bold;
-  /*-webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-image: url("../img/gif.gif");*/
-  opacity: 0.8;
-  /* Значение прозрачности */
-  filter: alpha(Opacity=80);
-  /* Прозрачность в IE */
-  mix-blend-mode: multiply;
-  color: #054D91;
-  text-shadow: 0 0 4px black, 0 0px 0px rgba(0, 0, 0, 0.5); }
-
-.title div span {
-  mix-blend-mode: multiply;
-  color: #054D91;
-  text-shadow: 0 0 4px black, 0 0px 0px rgba(0, 0, 0, 0.5); }
+  background-image: url("../img/gif.gif"); }
 
 .s1 .title div {
   font-size: 24vw;
