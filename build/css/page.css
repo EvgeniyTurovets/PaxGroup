@@ -321,6 +321,9 @@ button:hover {
   display: none; }
 
 @media (max-width: 991px) {
+  .section {
+    padding-top: 120px;
+    background-size: cover; }
   .mob-menu-page {
     display: block; }
   .mob-menu-page .s-menu2 {
